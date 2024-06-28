@@ -54,12 +54,6 @@ class TarefaController extends Controller
         return view('tarefas.create');
     }
 
-    public function show($id)
-    {
-        $tarefa = Tarefa::find($id);
-        return view('tarefas.show', compact('tarefa'));
-    }
-
     public function edit($id)
     {
         $tarefa = Tarefa::find($id);

@@ -24,7 +24,7 @@
                 <td>{{ $tarefa->titulo }}</td>
                 <td>{{ $tarefa->descricao }}</td>
                 <td>{{ $tarefa->data_vencimento }}</td>
-                <td>{{ ucfirst($tarefa->prioridade) }}</td>
+                <td>{{ $tarefa->prioridade }}</td>
                 <td>
                     <a href="{{ route('tarefas.edit', $tarefa->id) }}" class="btn-aviso">Editar</a>
                     <form action="{{ route('tarefas.destroy', $tarefa->id) }}" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir esta tarefa?')">
