@@ -15,6 +15,7 @@
                 <th>Descrição</th>
                 <th>Data de Vencimento</th>
                 <th>Prioridade</th>
+                <th>Concluido</th>
                 <th>Ações</th>
             </tr>
         </thead>
@@ -25,6 +26,7 @@
                 <td>{{ $tarefa->descricao }}</td>
                 <td>{{ $tarefa->data_vencimento }}</td>
                 <td>{{ $tarefa->prioridade }}</td>
+                <td>{{ $tarefa->concluido }}</td>
                 <td>
                     <a href="{{ route('tarefas.edit', $tarefa->id) }}" class="btn-aviso">Editar</a>
                     <form action="{{ route('tarefas.destroy', $tarefa->id) }}" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir esta tarefa?')">

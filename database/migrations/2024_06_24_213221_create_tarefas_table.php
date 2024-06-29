@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('descricao');
             $table->string('data_vencimento');
             $table->string('prioridade');
+            $table->string('concluido');
             $table->timestamps();
         });
     }

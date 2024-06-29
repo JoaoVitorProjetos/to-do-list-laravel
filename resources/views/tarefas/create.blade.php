@@ -27,6 +27,13 @@
                 <option value="baixa">Baixa</option>
             </select>
         </div>
+        <div class="">
+            <label for="concluido" >Concluido</label>
+            <select id="concluido" name="concluido" required>
+                <option value="concluido">Concluido</option>
+                <option value="não concluido">Nao Concluido</option>
+            </select>
+        </div>
         <button type="submit" class="btn">Salvar</button>
     </form>
 </div>

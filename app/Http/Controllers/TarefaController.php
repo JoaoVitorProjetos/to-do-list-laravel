@@ -20,7 +20,8 @@ class TarefaController extends Controller
             'titulo' => 'required',
             'descricao' => 'required',
             'data_vencimento' => 'required',
-            'prioridade' => 'required'
+            'prioridade' => 'required',
+            'concluido' => 'required'
           ]);
           Tarefa::create($request->all());
           return redirect()->route('tarefas.index')
@@ -33,7 +34,8 @@ class TarefaController extends Controller
             'titulo' => 'required',
             'descricao' => 'required',
             'data_vencimento' => 'required',
-            'prioridade' => 'required'
+            'prioridade' => 'required',
+            'concluido' => 'required'
           ]);
           $post = Tarefa::find($id);
           $post->update($request->all());

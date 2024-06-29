@@ -27,6 +27,13 @@
                 <option value="baixa" {{ $tarefa->prioridade == 'baixa' ? 'selected' : '' }}>Baixa</option>
             </select>
         </div>
+        <div class="">
+            <label for="concluido" >Concluido</label>
+            <select id="concluido" name="concluido" required>
+                <option value="concluido" {{ $tarefa->concluido == 'concluido' ? 'selected' : '' }}>Concluido</option>
+                <option value="não concluido" {{ $tarefa->concluido == 'nao_concluido' ? 'selected' : '' }}>Nao Concluido</option>
+            </select>
+        </div>
         <button type="submit" class="btn">Atualizar</button>
     </form>
 </div>

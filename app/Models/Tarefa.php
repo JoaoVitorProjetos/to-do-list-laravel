@@ -13,6 +13,7 @@ class Tarefa extends Model
         'titulo',
         'descricao',
         'data_vencimento',
-        'prioridade'
+        'prioridade',
+        'concluido'
     ];
 }
